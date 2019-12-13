@@ -22,7 +22,7 @@ class BurgerBuilder extends Component {
         
     }
     componentDidMount = () => {
-        console.log(this.props)
+        
         this.props.onInitIgredients()
        
     }
@@ -138,7 +138,7 @@ const mapDispatchToProps = dispatch => {
         onIngredientRemoved: (ingName) => dispatch(burgerBuilderActions.removeIngredient(ingName)),
         onInitIgredients: () => dispatch(burgerBuilderActions.initIngredients()),
         onInitPurchase: () => dispatch(burgerBuilderActions.purchaseInit()),
-        onSetAuthRedirectPath: (path) => dispatch(burgerBuilderActions. setAuthRedirectPath(path)) 
+        onSetAuthRedirectPath: (path) => dispatch(burgerBuilderActions.setAuthRedirectPath(path)) 
     }
 }
 
